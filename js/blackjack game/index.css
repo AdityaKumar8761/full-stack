@@ -2,10 +2,14 @@ body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-image: url("images.jpeg");
     background-size: cover;
+    color:goldenrod;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 100px;
 }
 
 #name {
-    color: rgba(247, 247, 14, 0.781);
+    color:goldenrod;
     text-align: center;
     margin-top: 100px;
     font-size: 100px;
@@ -32,14 +36,28 @@ body{
 
 .startButtonDiv{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .startButton{
     height: 75px;
     width: 400px;
-    color: green;
-    background-color: rgb(207, 207, 4);
+    color: #016f32;
+    background-color: goldenrod;
     font-size: 35px;
     font-weight: bolder;
+    margin-top: 4px;
+}
+
+.NewButton{
+    height: 75px;
+    width: 400px;
+    color: #016f32;
+    background-color: goldenrod;
+    font-size: 35px;
+    font-weight: bolder;
+    margin-top: 4px;
+    display: none;
 }
