@@ -1,0 +1,66 @@
+body{
+background-color: #003d4d;
+padding: 100px 100px 0px 150px;
+color: gray;
+font-size: 25px;
+}
+
+.hh1{
+color: white;
+font-size: 75px;
+padding: 0;
+margin: 0;
+}
+
+.hh2{
+color: #00c996 ;
+font-size: 75px;
+padding: 0 ;
+margin: 0 ;
+}
+
+button{
+    margin-top:75px ;
+    color: white;
+    background-color: #00c996;
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    width: 220px;
+    font-size: 20px;
+}button:hover {
+  background-color: #45f8cb; /* Darker blue on hover */
+}button:active{
+    background-color: #003d4d;
+}
+
+.line{
+    background-color: rgb(72, 73, 73);
+    height: 2px;
+    margin-top: 50px;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+}
+
+.div1{
+margin-right: 25px;
+margin-top: 50px;
+background-color: #0b4d5e;
+width: 50%;
+height: 50px;
+border-radius: 5px;
+text-align: center;
+}
+
+.div2{
+margin-left: 25px;
+margin-top: 50px;
+background-color: #0b4d5e;
+width: 50%;
+height: 50px;
+border-radius: 5px;
+text-align: center;
+}
