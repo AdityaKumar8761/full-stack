@@ -30,3 +30,30 @@ async function generate(){
     }
 }
 
+
+div1.addEventListener("click", () => {
+  const textToCopy = div1.innerText;
+
+  navigator.clipboard.writeText(textToCopy)
+    .then(() => {
+      alert("Text copied to clipboard!");
+    })
+    .catch(err => {
+      console.error("Failed to copy text: ", err);
+    });
+});
+
+
+div2.addEventListener("click", () => {
+  const textToCopy = div2.innerText;
+
+  navigator.clipboard.writeText(textToCopy)
+    .then(() => {
+      alert("Text copied to clipboard!");
+    })
+    .catch(err => {
+      console.error("Failed to copy text: ", err);
+    });
+});
+
+
