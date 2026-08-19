@@ -29,6 +29,21 @@ button{
     background-color: #c2eca9;
 }
 
+#delete-btn{
+    margin: 10px;
+    width: 200px;
+    height: 50px;
+    margin-left: 0;
+    background-color: white;
+    color: #5f9341;
+    border: 2px solid #5f9341;
+    font-size: 20px;
+}#delete-btn:hover{
+    background-color: rgb(241, 241, 241);
+}#delete-btn:active{
+    background-color: #c2eca9;
+}
+
 ul{
     list-style: none;
     margin-left: 0;
