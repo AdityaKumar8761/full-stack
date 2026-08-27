@@ -1,7 +1,7 @@
 import http  from 'node:http'
 import { getDataFromDB } from './db.js'
 import {status} from './utilite/status.js'
-import { count } from 'node:console'
+import { getDataByQueryParams } from './utilite/filter.js'
 
 const PORT = 8000
 //end method take 3 parameter data , utf type, and a function
@@ -10,10 +10,28 @@ const PORT = 8000
 
 const server = http.createServer(async (req,res) =>{
     const data = await getDataFromDB()
+
+    // const urlObj = new URL(req.url , `http://${req.headers.host}`)
+
+    // console.log(urlObj)
+
+
+    const urlObj = new URL(req.url , `http://${req.headers.host}`)
+    const query = urlObj.searchParams
+
+
+
     
-    if(req.url === '/api/data' && req.method === 'GET') {
-        status(res , 200 , data)
-    }
+    if(urlObj.pathname === '/api/data' && req.method === 'GET') {
+
+        const filted = getDataByQueryParams(data , Object.fromEntries(query))
+        status(res , 200 , filted)
+    }   
+
+
+
+
+
 
     else if(req.url.startsWith('/api/continent') && req.method === 'GET'){
         const continetn =req.url.split('/').pop()
