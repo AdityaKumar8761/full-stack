@@ -38,6 +38,8 @@ app.get('/' , (req , res) =>{
 app.get('/api/users' , (req , res)=>{
     //header setting
     res.setHeader('X-myName' , 'Aditya kuamr') // custom header 
+    res.status(201).json({status : "sucdess" })
+
 //always add X custom headr 
 
     return res.json(users)
