@@ -20,8 +20,12 @@ const userSchema = new mongoose.Schema({
         type: String,
     },
     gender: {
-        type: String,
+        type: String
+    },
+    password: {
+        type: String
     }
+
 },
     {
         timestamps: true 

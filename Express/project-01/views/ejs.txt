@@ -1,0 +1,15 @@
+Serverside rendering
+
+
+app.set('view engine', 'ejs')
+
+home.ejs
+
+const path = require('path')
+
+app.get("./test" , async (req,res)=>{
+    const functionName = await URL.find({})
+    return res.render('home' {
+        urls : allUrls,         <-------------use the variable can be passed
+    })
+})

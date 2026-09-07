@@ -2,6 +2,7 @@ const express = require('express')
 const User =require('./modules/User.js')
 const userRouter = require('./routes/user.js')
 const connectMongoDb = require('./connection.js')
+const Signup = require('./routes/Signup.js')
 
 const PORT = 8000
 
@@ -24,6 +25,7 @@ app.get('/' , (req , res) =>{
     return res.end("welcome to the server")
 })
 
+app.use('/signUp', Signup);
 
 //if any request comes to /user use the userRouter function or route
 
